@@ -1,0 +1,49 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    background: white;
+    width: fit-content;
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+
+.input {
+    all: unset;
+    width: 400px;
+    margin-left: 1rem;
+}
+
+.input::placeholder {
+    color: #ababab;
+    font-family: "KG PartOfMe", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.searchButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #2F251E;
+    font-family: "KG PartOfMe", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .5rem .75rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.searchButton:hover {
+    background: #4d423b;
+    transform: scale(1.05);
+}
+
+.zoom {
+    margin-left: .8rem;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
