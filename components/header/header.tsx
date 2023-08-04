@@ -9,6 +9,10 @@ const Header = () => {
         <h2 className={styles.subtitle}>Where Adventure Splashes with Cuteness!</h2>
       </div>
       <Searchbar />
+      <div className={styles.capyContainer}>
+        <img className={styles.capy} src="/images/capybara_left.png" alt="capybara left" />
+        <img className={styles.capy} src="/images/capybara_right.png" alt="capybara right" />
+      </div>
     </header>
   )
 }
