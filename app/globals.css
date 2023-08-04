@@ -4,6 +4,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Acherus Feral Bold";
+    src: url("/fonts/AcherusFeral-Bold.otf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Acherus Feral Light";
+    src: url("/fonts/AcherusFeral-Light.otf");
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
