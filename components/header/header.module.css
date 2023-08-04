@@ -25,6 +25,8 @@
     font-size: 5rem;
     color: #f1ede8;
     text-shadow: 2px 3px 3px #504237;
+    animation: slideup 1s ease-out forwards;
+    opacity: 0;
 }
 
 .subtitle {
@@ -32,4 +34,17 @@
     font-size: 3rem;
     color: #f1ede8;
     text-shadow: 2px 3px 3px #504237;
+    animation: slideup 1s ease-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
