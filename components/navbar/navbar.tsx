@@ -17,24 +17,34 @@ const Navbar = () => {
           <img src="/icons/logo.svg" alt="logo" />
         </Link>
       </div>
-      <div className={styles.links}>
-        <div className={`${styles.link} ${isActive('/') ? styles.active : ''}`}>
-          <Link href={'/'}>Home</Link>
+      <div className={styles.linksWrapper}>
+        <div className={styles.links}>
+          <div className={`${styles.link} ${isActive('/') ? styles.active : ''}`}>
+            <Link href={'/'}>Home</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/capybaras') ? styles.active : ''}`}>
+            <Link href={'/capybaras'}>Capys</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/articles') ? styles.active : ''}`}>
+            <Link href={'/articles'}>Articles</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/shop') ? styles.active : ''}`}>
+            <Link href={'/shop'}>Shop</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/aboutus') ? styles.active : ''}`}>
+            <Link href={'/aboutus'}>About Us</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/contact') ? styles.active : ''}`}>
+            <Link href={'/contact'}>Contact</Link>
+          </div>
         </div>
-        <div className={`${styles.link} ${isActive('/capybaras') ? styles.active : ''}`}>
-          <Link href={'/capybaras'}>Capys</Link>
-        </div>
-        <div className={`${styles.link} ${isActive('/articles') ? styles.active : ''}`}>
-          <Link href={'/articles'}>Articles</Link>
-        </div>
-        <div className={`${styles.link} ${isActive('/shop') ? styles.active : ''}`}>
-          <Link href={'/shop'}>Shop</Link>
-        </div>
-        <div className={`${styles.link} ${isActive('/aboutus') ? styles.active : ''}`}>
-          <Link href={'/aboutus'}>About Us</Link>
-        </div>
-        <div className={`${styles.link} ${isActive('/contact') ? styles.active : ''}`}>
-          <Link href={'/contact'}>Contact</Link>
+        <div className={styles.links}>
+          <div className={`${styles.link} ${isActive('/login') ? styles.active : ''}`}>
+            <Link href={'/'}>Login</Link>
+          </div>
+          <div className={`${styles.link} ${isActive('/register') ? styles.active : ''}`}>
+            <Link href={'/register'}>Sign Up</Link>
+          </div>
         </div>
       </div>
     </nav>

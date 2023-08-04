@@ -5,8 +5,8 @@
     left: 1rem;
     display: flex;
     flex-direction: row;
-    width: fit-content;
     height: 3.3rem;
+    width: 100%;
 }
 
 .logo {
@@ -23,6 +23,13 @@
 
 .logo:hover {
     transform: scale(1.1);
+}
+
+.linksWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 5.3rem);
 }
 
 .links {
@@ -42,6 +49,7 @@
     padding: .5rem .75rem;
     border-radius: 2rem;
     transition: all .2s ease-in-out;
+    white-space: nowrap;
 }
 
 .link:hover {
