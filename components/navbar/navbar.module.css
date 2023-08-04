@@ -1,0 +1,59 @@
+.navbar {
+    position: absolute;
+    background: transparent;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 3.3rem;
+}
+
+.logo {
+    height: 3.3rem;
+    width: 3.3rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    margin-left: .66rem;
+    background: white;
+    padding: .5rem;
+    border-radius: 3rem;
+}
+
+.link {
+    color: #2F251E;
+    font-family: "KG PartOfMe", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .5rem .75rem;
+    border-radius: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.link:hover {
+    color: white;
+    background: #564a42;
+}
+
+.link:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.active {
+    color: white;
+    background: #2F251E;
+}
