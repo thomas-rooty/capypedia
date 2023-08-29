@@ -25,6 +25,10 @@
     transform: scale(1.1);
 }
 
+.logo img {
+    margin-top: 3px;
+}
+
 .linksWrapper {
     display: flex;
     flex-direction: row;
