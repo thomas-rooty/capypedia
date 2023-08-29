@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -52,6 +53,36 @@
 .capy {
     width: 22%;
     height: auto;
+}
+
+.headerLowerPane {
+    background: bisque;
+    position: absolute;
+    bottom: 19.25vh;
+    width: 50vw;
+    height: 20vh;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.headerLowerPane::before,
+.headerLowerPane::after {
+    position: absolute;
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    bottom: 0;
+}
+
+.headerLowerPane:before {
+    left: -3rem;
+    border-radius: 0 0 50% 0;
+    box-shadow: 20px 0 0 0 bisque;
+}
+
+.headerLowerPane:after {
+    right: -3rem;
+    border-radius: 0 0 0 50%;
+    box-shadow: -20px 0 0 0 bisque;
 }
 
 @keyframes slideup {

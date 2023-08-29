@@ -13,6 +13,7 @@ const Header = () => {
         <img className={styles.capy} src="/images/capybara_left.png" alt="capybara left" />
         <img className={styles.capy} src="/images/capybara_right.png" alt="capybara right" />
       </div>
+      <div className={styles.headerLowerPane}/>
     </header>
   )
 }
