@@ -38,11 +38,12 @@ const Navbar = () => {
             <Link href={'/contact'}>Contact</Link>
           </div>
         </div>
-        <div className={styles.links}>
-          <div className={`${styles.link} ${isActive('/login') ? styles.active : ''}`}>
+        <div className={styles.auth__links}>
+          <div className={`${styles.link} ${styles.link__login} ${isActive('/login') ? styles.active : ''}`}>
             <Link href={'/'}>Login</Link>
           </div>
-          <div className={`${styles.link} ${isActive('/register') ? styles.active : ''}`}>
+          <hr />
+          <div className={`${styles.link} ${styles.link__register} ${isActive('/register') ? styles.active : ''}`}>
             <Link href={'/register'}>Sign Up</Link>
           </div>
         </div>

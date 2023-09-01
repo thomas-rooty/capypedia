@@ -36,7 +36,8 @@
     width: calc(100% - 5.3rem);
 }
 
-.links {
+.links,
+.auth__links {
     display: flex;
     flex-direction: row;
     margin-left: .66rem;
@@ -68,4 +69,15 @@
 .active {
     color: white;
     background: #2F251E;
+}
+
+.auth__links > hr {
+    height: 1.5rem;
+    width: 1px;
+    background: #2F251E;
+    margin: .4rem .4rem .4rem 0;
+}
+
+.link__register {
+    text-shadow: 0 0 1px #2F251E;
 }
